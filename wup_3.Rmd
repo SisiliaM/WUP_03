@@ -35,6 +35,8 @@ basicCN + geom_boxplot()
 basicCN + geom_boxplot(notch=TRUE,outlier.color = "red") + stat_boxplot(geom ='errorbar') + labs(title="Fancy notch boxplot \n with 2 lines")
 ```
 
+Looking at the box plot you can infer that the back row consumes more alcohol than the first and middle rows.
+
 ## Numerical Summarys 
 
 ## Inferential Tests
