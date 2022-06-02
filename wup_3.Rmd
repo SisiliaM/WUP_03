@@ -39,6 +39,11 @@ Looking at the box plot you can infer that the back row consumes more alcohol th
 
 ## Numerical Summarys 
 
+```{r}
+favstats(alcohol~Seat,data=davisdata)
+```
+The people in the back row have a mean more than 3x higher than the mean for the people in the front and middle row.
+
 ## Inferential Tests
 
 ## Conclusions
