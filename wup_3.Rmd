@@ -46,6 +46,19 @@ The people in the back row have a mean more than 3x higher than the mean for the
 
 ## Inferential Tests
 
+```{r}
+model1 <- aov(alcohol~Seat,data=davisdata)
+summary.aov(model1)
+```
+
+since the p value from one way anova was such a small number we are going to follow up with TurkeyHSD
+
+```{r}
+plot(TukeyHSD(model1))
+```
+
+Looking at the comparison chart, the front and back row you can see a major difference between the two since it lands all below zero. Just like the front and bacl row, the middle and back row comparison also has a major difference which is why it shows the line below zero as well. However when you compare the middle and front row you can see that there is not a major difference since the line does it zero and includes positive confidence integers.
+
 ## Conclusions
 
 
